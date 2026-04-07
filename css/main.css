@@ -1,0 +1,249 @@
+/* 
+Analogous colour scheme:
+#264653
+#2A9D8F
+#8AB17D
+#E9C46A
+#F4F1DE
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.75rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5;
+  color: #264653;
+  background-color: #F4F1DE;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+  margin-top: 0;
+  color: #264653;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header {
+  background-color: #F4F1DE;
+}
+
+.top-bar {
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.logo h1 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  margin-bottom: 0.75rem;
+}
+
+.main-nav a {
+  display: block;
+  text-decoration: none;
+  background-color: #2A9D8F;
+  color: #ffffff;
+  padding: 0.9rem 1rem;
+  font-weight: 600;
+}
+
+.main-nav a.active,
+.main-nav a:hover {
+  background-color: #264653;
+}
+
+.masthead {
+  background: linear-gradient(rgba(38, 70, 83, 0.55), rgba(38, 70, 83, 0.55)),
+    url("../img/masthead.jpg") center/cover no-repeat;
+  color: #ffffff;
+  padding: 4rem 0;
+}
+
+.masthead h2,
+.masthead p {
+  color: #ffffff;
+}
+
+.masthead h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.topic-article {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(38, 70, 83, 0.2);
+}
+
+.topic-article:last-child {
+  border-bottom: none;
+}
+
+.topic-article h2,
+.portfolio-content h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.article-layout figure {
+  margin-bottom: 1rem;
+}
+
+.article-layout figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.article-text p {
+  text-align: left;
+  margin-top: 0;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.card figcaption {
+  text-align: center;
+  padding-top: 0.75rem;
+  font-weight: 600;
+}
+
+.site-footer {
+  background-color: #264653;
+  color: #ffffff;
+  padding: 2rem 0;
+}
+
+.site-footer p {
+  margin: 0.3rem 0;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+/* Tablet */
+@media (min-width: 35rem) {
+  html {
+    font-size: 1rem;
+  }
+
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .logo h1 {
+    margin-bottom: 0;
+  }
+
+  .main-nav ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .main-nav li {
+    margin-bottom: 0;
+  }
+
+  .main-nav a {
+    min-width: 8rem;
+    text-align: center;
+  }
+
+  .article-layout {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .article-layout figure {
+    width: 40%;
+    margin-bottom: 0;
+  }
+
+  .article-text {
+    width: 60%;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 80rem) {
+  html {
+    font-size: 1.25rem;
+  }
+
+  .top-bar,
+  .masthead .wrapper,
+  #content{
+    text-align: left;
+  }
+
+  .topic-article h2,
+  .portfolio-content h2 {
+    text-align: left;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
